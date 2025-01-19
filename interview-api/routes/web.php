@@ -11,7 +11,7 @@ Route::post('/pets', [PetController::class, 'store']);
 # Getting
 Route::get('/pets', [PetController::class, 'index']);
 
-# Edditing
+# Editing
 Route::get('/pets/{id}/edit', [PetController::class, 'edit']);
 
 # Updating
