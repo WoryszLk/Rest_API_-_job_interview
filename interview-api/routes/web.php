@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PetController;
+
+Route::get('/', [PetController::class, 'index']);
 
 # Creating
 Route::get('/pets/create', [PetController::class, 'create']);
